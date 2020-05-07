@@ -25,8 +25,8 @@
   <!-- fa fa icon  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- <link href="css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
-  <script src="js/jquery.mb.YTPlayer.js"></script> -->
+  <link href="css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+  <script src="js/jquery.mb.YTPlayer.js"></script>
 </head>
 
 <body>
@@ -49,12 +49,12 @@
 
     </div>
 
-    <video autoplay loop preload="auto" playsinline="" muted="" id="playleat">
+    <!-- <video autoplay loop preload="auto" playsinline="" muted="" id="playleat">
       <source src="video/Comp.mp4" type="video/mp4">
-    </video>
-    <!-- <video > -->
-      <!-- <source src="video/comp.mp4" type="video/mp4"> -->
-        <!-- <script>
+    </video> -->
+    <video id="playleat" >
+      <source src="video/comp.mp4" type="video/mp4">
+        <script>
         var myPlayer;
         jQuery(function () {
           myPlayer = jQuery("#bgndVideo").YTPlayer({useOnMobile:true, mobileFallbackImage:"assets/mask-4.png"});
@@ -62,9 +62,9 @@
         });
       </script>
       <div id="bgndVideo" class="player"  data-property="{videoURL:'DrvqTix_lFo',containment:'body', showControls:false, autoPlay:true, loop:true, vol:50, mute:false, startAt:0,  stopAt:300, opacity:1, addRaster:true, quality:'large', optimizeDisplay:true, addFilters: {grayscale: 50,sepia: 80,opacity: 30}}">My video</div>
-   -->
   
-    <!-- </video> -->
+  
+    </video>
 
   </section>
   <!-- end video section  -->
